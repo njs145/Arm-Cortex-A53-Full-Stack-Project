@@ -3,9 +3,9 @@
 	url = https://github.com/njs145/arm-trusted-firmware.git
 
 [submodule "02_linux"]
-        path = 02_linux
+	path = 02_linux
 	url = https://github.com/njs145/linux.git
 
 [submodule "03_buildroot"]
-        path = 03_buildroot
-        url = https://github.com/njs145/buildroot.git
+	path = 03_buildroot
+	url = https://github.com/njs145/buildroot.git
