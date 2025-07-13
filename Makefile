@@ -19,9 +19,9 @@ LINUX_SCRIPT := build_qemu_linux.sh
 BUILDROOT_SCRIPT := qemu_build.sh
 
 # Makefile 타겟 정의
-.PHONY: all atf linux virt_image clean
+.PHONY: all atf linux buildroot virt_image clean
 
-all: atf
+all: atf linux buildroot
 
 atf:
 	@echo "Building Arm Trusted Firmware (ATF)..."
