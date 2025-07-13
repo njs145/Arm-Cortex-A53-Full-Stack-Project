@@ -26,7 +26,7 @@ all: atf
 atf:
 	@echo "Building Arm Trusted Firmware (ATF)..."
 	cd $(ATF_DIR) && ./$(ATF_SCRIPT)
-	cp $(ATF_OUTPUT_DIR)/$(ATF_OUTPUT_FILE) $(CURDIR)/virt_images
+	cd $(ATF_OUTPUT_DIR) && cp $(ATF_OUTPUT_DIR)/$(ATF_OUTPUT_FILE) $(CURDIR)/virt_images
 
 	@echo "Generating disassembly files..."
 	mkdir -p $(VIRT_IMAGES_DIR)/deassemble	
